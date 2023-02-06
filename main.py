@@ -1,4 +1,4 @@
-import cable_functions
+from cable_functions import color_pair_to_string, get_color_from_pair_number, get_pair_number_from_color, test_number_to_pair, test_pair_to_number
 
 if __name__ == '__main__':
   test_number_to_pair(4, 'White', 'Brown')
