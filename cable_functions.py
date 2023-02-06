@@ -1,5 +1,14 @@
 MAJOR_COLORS = ['White', 'Red', 'Black', 'Yellow', 'Violet']
 MINOR_COLORS = ["Blue", "Orange", "Green", "Brown", "Slate"]
+REFERENCE_MANUAL = dict()
+
+def print_reference_manual():
+    REFERENCE_MANUAL_LIST = []
+    for major_color_index in range(len(MAJOR_COLORS)):
+        for minor_color_index in range(len(MINOR_COLORS)):
+            REFERENCE_MANUAL_LIST.append(MAJOR_COLORS[major_color_index] + " " + MINOR_COLORS[minor_color_index])
+    REFERENCE_MANUAL = dict(list(enumerate(REFERENCE_MANUAL_LIST)))
+    print(REFERENCE_MANUAL)
 
 def color_pair_to_string(major_color, minor_color):
   return f'{major_color} {minor_color}'
