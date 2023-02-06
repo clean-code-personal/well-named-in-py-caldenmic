@@ -1,4 +1,4 @@
-
+import cable_functions
 
 if __name__ == '__main__':
   test_number_to_pair(4, 'White', 'Brown')
