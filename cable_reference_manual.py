@@ -1,5 +1,6 @@
 from cable_functions import MAJOR_COLORS, MINOR_COLORS
 
+#To store the reference numbers along with their color coding
 REFERENCE_MANUAL = dict()
 
 def print_reference_manual():
