@@ -25,8 +25,7 @@ def get_pair_number_from_color(major_color, minor_color):
     raise Exception('Minor index out of range')
   return major_index * len(MINOR_COLORS) + minor_index + 1
 
-def test_number_to_pair(pair_number,
-                        expected_major_color, expected_minor_color):
+def test_number_to_pair(pair_number, expected_major_color, expected_minor_color):
   major_color, minor_color = get_color_from_pair_number(pair_number)
   assert(major_color == expected_major_color)
   assert(minor_color == expected_minor_color)
