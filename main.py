@@ -1,5 +1,8 @@
+import sys
+sys.path.append('./test/')
+
 from cable_functions import color_pair_to_string, get_color_from_pair_number, get_pair_number_from_color
-from test.cable_test_functions import test_number_to_pair, test_pair_to_number
+from cable_test_functions import test_number_to_pair, test_pair_to_number
 from cable_reference_manual import print_reference_manual
 
 if __name__ == '__main__':
